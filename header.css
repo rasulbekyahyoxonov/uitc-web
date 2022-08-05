@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap');
+:root {
+    --manrope: 'Manrope', sans-serif; 
+    --oswald: 'Oswald', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    background: url(Rectangle.png);
+    background-size: cover;
+    overflow-y: hidden;
+}
+.container
+{
+    width: 1400px;
+    margin: 0 auto;
+}
+
+header{
+    background: rgba(255, 255, 255, 0.146);
+    border-bottom: 1.4px solid rgba(255, 255, 255, 0.527);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+header .container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .link a
+{
+    font-family: var(--manrope);
+    font-size: 14px;
+    margin: 0 30px;
+    padding: 0 6px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-weight: 900;
+}
+header .brand{
+    margin: 0 40px;
+}
+
+.sideBar
+{
+    width: 110px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.146);
+    border-right: 1.4px solid rgba(255, 255, 255, 0.527); 
+    position: fixed;
+    margin-top: 110px;
+    left: 0;
+    
+
+}
+.sideBar .icon 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+    border-bottom: 1px solid #fff;
+}
+.sideBar .icon a 
+{
+    font-size: 28px;
+    color: #fff;
+    margin: 15px 0;
+}
+.sideBar .text
+{
+    display: flex;
+    width: 100%;
+    min-height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.sideBar .text p 
+{
+    transform: rotate(-90deg);
+    white-space: nowrap;   
+    color: #fff;
+    font-size: 9px;
+    font-family: var(--manrope);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transform: rotateZ(-90deg);
+    white-space: nowrap;
+    
+}
+
+
+/* absolute text */
+.fonText
+{
+    position: absolute;
+    left: 0;
+    top: 15%;
+    
+    right: 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.fonText h1 
+{
+    font-size: 140px;
+    font-family: var(--oswald);
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: .3px rgba(255, 255, 255, 0.516);
+    letter-spacing: 20px;
+    line-height: 1.2;
+    
+}
+
