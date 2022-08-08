@@ -153,7 +153,6 @@ header {
 
 .bottomBtn {
     padding-top: 110px;
-    float: left;
 }
 .btn {
     width: 200px;
@@ -168,7 +167,6 @@ header {
     border-radius: 15px;
     cursor: pointer;
     transition: .1s;
-
 }
 .btn1 {
     color: #9E64C4;
@@ -187,7 +185,6 @@ header {
 
 .lineDiv {
     display: flex;
-    float: left;
     justify-content: flex-start;
     align-items: center;
     height: 40px;
