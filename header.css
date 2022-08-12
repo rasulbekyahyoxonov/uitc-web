@@ -9,13 +9,6 @@
     padding: 0;
     text-decoration: none;
 }
-body{
-    height: 100vh;
-    background: url(Rectangle.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow-y: hidden;
-}
 .container
 {
     width: 1400px;
@@ -29,6 +22,7 @@ header{
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 111;
 }
 header .container
 {
@@ -61,6 +55,7 @@ header .brand{
     position: fixed;
     margin-top: 110px;
     left: 0;
+    z-index: 111;
     
 
 }
@@ -106,16 +101,15 @@ header .brand{
 /* absolute text */
 .fonText
 {
-    position: absolute;
-    left: 0;
+    height: 100vh;
+    position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
+    right: 80%;
     bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    overflow: hidden;
-    z-index: -1;
 }
 .fonText h1 
 {
@@ -129,21 +123,43 @@ header .brand{
     white-space: nowrap; 
     padding: 0 20px;
     user-select: none;
-    opacity: .7;
+    opacity: 0.7;
 }
 
 
 /* grafik box*/
-.GrafikBox {
+.scroll-Div {
     width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.GrafikBox {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100%;
     min-height: 100vh;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
+    z-index: 2;
 }
-.Gboxs, .Btnbox {
-   margin-left: 160px;
+.GrafikBox1 {
+    background: url('Rectangle.png');
+}
+.GrafikBox2 {
+    background: url('Rectangle2.png');
+}
+.GrafikBox3 {
+    background: url('Rectangle3.png');
+}
+
+.Gboxs {
+    margin-top: 150px;
+    margin-left: 160px;
+    z-index: 10;
 }
 
 .topname-h1 {
@@ -177,7 +193,8 @@ header .brand{
 }
 
 .Btnbox {
-    
+    margin-left: 160px;
+    z-index: 10;
 }
 .btn {
     width: 200px;
@@ -194,16 +211,28 @@ header .brand{
     transition: .1s;
 }
 .btn1 {
-    color: #9E64C4;
     margin-right: 25px;
+}
+.btn1:hover {
+    background-color: transparent;
+    color: #fff !important;
+    border: 1px solid #fff;
 }
 .btn2 {
     background-color: transparent;
     border: 1px solid #fff;
     color: #fff;
-    margin-right: 100px;
+    margin-right: 100px ;
 }
 .btn2:hover {
     background-color: #fff;
+}
+.clr1:hover {
     color: #9E64C4;
+}
+.clr2:hover {
+    color: #9E96DD;
+}
+.clr3:hover {
+    color: #CC837E;
 }
