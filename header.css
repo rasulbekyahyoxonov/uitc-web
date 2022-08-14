@@ -8,7 +8,20 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
+html::-webkit-scrollbar {
+    width: 10px;
+}
+html::-webkit-scrollbar-thumb {
+    background: rgb(146, 146, 146);
+    border-radius: 5px;
+    margin: 2px;
+}
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
 .container
 {
     width: 1400px;
@@ -22,7 +35,7 @@ header{
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 111;
+    z-index: 999999;
 }
 header .container
 {
@@ -53,9 +66,9 @@ header .brand{
     background: rgba(255, 255, 255, 0.146);
     border-right: 1.4px solid rgba(255, 255, 255, 0.527); 
     position: fixed;
-    margin-top: 110px;
+    margin-top: 111px;
     left: 0;
-    z-index: 111;
+    z-index: 999999;
     
 
 }
@@ -94,7 +107,6 @@ header .brand{
     letter-spacing: 4px;
     transform: rotateZ(-90deg);
     white-space: nowrap;
-    
 }
 
 
@@ -111,9 +123,16 @@ header .brand{
     flex-direction: column;
     justify-content: space-around;
 }
+.back-img {
+    min-width: 100vw !important;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .fonText h1 
 {
-    font-size: 140px;
+    /* font-size: 140px; */
+    font-size: 7.5rem;
     font-family: var(--oswald);
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0);
@@ -125,7 +144,13 @@ header .brand{
     user-select: none;
     opacity: 0.7;
 }
-
+.fonText .txt1 {
+    transform: translateX(-500px);
+    margin-top: 120px;
+}
+.fonText .txt2 {
+    margin-bottom: 10px;
+}
 
 /* grafik box*/
 .scroll-Div {
@@ -136,29 +161,32 @@ header .brand{
     left: 0;
 }
 .GrafikBox {
-    background-size: cover;
-    background-repeat: no-repeat;
     min-width: 100%;
     min-height: 100vh;
     display: flex;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: column;
     z-index: 2;
 }
-.GrafikBox1 {
-    background: url('Rectangle.png');
+.GrafikBox1 {   
+    background: url('pictures/Rectangle.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .GrafikBox2 {
-    background: url('Rectangle2.png');
+    background: url('pictures/Rectangle2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .GrafikBox3 {
-    background: url('Rectangle3.png');
+    background: url('pictures/Rectangle3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .Gboxs {
-    margin-top: 150px;
-    margin-left: 160px;
+    margin-left: 200px;
     z-index: 10;
 }
 
@@ -192,9 +220,19 @@ header .brand{
     letter-spacing: 6px;
 }
 
+.BtnBox-div {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
 .Btnbox {
-    margin-left: 160px;
-    z-index: 10;
+    position: fixed;
+    margin-left: 200px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10%;
 }
 .btn {
     width: 200px;
@@ -222,17 +260,74 @@ header .brand{
     background-color: transparent;
     border: 1px solid #fff;
     color: #fff;
-    margin-right: 100px ;
+    margin-right: 100px;
 }
-.btn2:hover {
+
+.lineDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.lineDiv .oval {
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    /* border: 1px solid #fff; */
+    outline: 1px solid #fff;
+    cursor: pointer;
+}
+.lineDiv .line {
+    width: 314px;
+    height: 1.5px;
     background-color: #fff;
 }
-.clr1:hover {
-    color: #9E64C4;
+.lineDiv .oval2 {
+    background-color: transparent;
 }
-.clr2:hover {
-    color: #9E96DD;
+.lineDiv .line2 {
+    width: 99999px;
 }
-.clr3:hover {
-    color: #CC837E;
+
+/* circle div */
+
+.circleDiv {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+.circleDiv div {
+    position: absolute;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.62) 0%, rgba(255, 255, 255, 0.25) 100%),
+                    linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+    backdrop-filter: blur(7px);
+    box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.1);
+}
+.main-circle {
+    right: 10%;
+    top: 22%;
+    width: 497px;
+    height: 497px;
+    z-index: 99;
+}
+.circle2 {
+    width: 172px;
+    height: 172px;
+}
+.circle3 {
+    height: 126px;
+    width: 126px;
+}
+.circle4 {
+    height: 88px;
+    width: 88px;
+}
+.circle5 {
+    height: 157px;
+    width: 157px;
 }
