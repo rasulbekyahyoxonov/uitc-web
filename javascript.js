@@ -21,3 +21,12 @@ oval3.addEventListener('click', function () {
     oval2.style.background = 'transparent'
     this.style.background = '#fff'
 })
+
+document.querySelector('.check-img').addEventListener('click', function() {
+    document.querySelector('.OpenNaw').style.display = 'flex';
+})
+document.querySelector('.close-icon').addEventListener('click', ()=> {
+    document.querySelector('.OpenNaw').style.display = 'none';
+})
+
+new WOW().init();

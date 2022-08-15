@@ -1,0 +1,177 @@
+@media only screen and (max-width: 1600px) {
+    header .link a {
+        font-size: 13px;
+    }
+    .brand a img {
+        width: 80px;
+    }
+    .sideBar {
+        margin-top: 96px;
+    }
+    .sideBar .icon {
+        min-height: 20vh;
+    }
+    .topname-h1 {
+        letter-spacing: 8px;
+    }
+    .Gboxs p {
+        letter-spacing: 4px;
+    }
+    .main-circle {
+        width: 350px;
+        height: 350px;
+    }
+    .circle2 {
+        width: 102px;
+        height: 102px;
+    }
+    .circle3 {
+        height: 106px;
+        width: 106px;
+    }
+    .circle4 {
+        height: 88px;
+        width: 88px;
+    }
+    .circle5 {
+        height: 107px;
+        width: 107px;
+    }
+    .lineDiv .line {
+        width: 280px;
+    }
+
+}
+@media only screen and (max-width: 1400px) {
+    .container {
+        width: 100%;
+    }
+    .lineDiv .line {
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .circleDiv {
+        display: none;
+    }
+    .lineDiv {
+        transform: rotateZ(-45deg);
+    }
+    .Btnbox {
+        margin-bottom: 200px;
+    }
+    .Gboxs {
+        padding-bottom: 100px;
+    }
+    .topname-h1 {
+        padding-bottom: 25px;
+    }
+    .fonText .txt1 {
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 900px) {
+    header .link a {
+        font-size: 11px;
+    }
+    .brand a img {
+        width: 70px;
+    }
+    
+    .sideBar {
+        width: 90px;
+    }
+    .sideBar .icon a {
+        font-size: 24px;
+    }
+    .sideBar .text p {
+        font-size: 7px;
+    }
+
+    .Gboxs, .Btnbox {
+        margin-left: 150px;
+    }
+    .topname-h1 {
+        font-size: 50px;
+    }
+    .Gboxs p {
+        font-size: 15px;
+    }
+    .Btnbox .btn {
+        font-size: 10px;
+        padding: 8px;
+    }
+    .head .container {
+        display: none;
+    }
+    .brand2 {
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+    .brand2 a img {
+        width: 80px;
+    }
+
+
+
+    .label-one {
+        display: block;
+    }
+    .OpenNaw
+    {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999999;
+        backdrop-filter: blur(25px);
+    }
+    .OpenNaw .brand3 {
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+    .OpenNaw .brand3 a img {
+        width: 100px;
+        height: 80px;
+        margin: 20px 0 10px 0;
+        object-fit: contain;
+    }
+    .close-icon {
+        font-size: 38px;
+        color: #fff;
+        position: absolute;
+        top: 24px;
+        right: 37px;
+        cursor: pointer;
+        padding: 7px;
+    }
+
+    .OpenNaw .link2 {
+        width: 100%;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 160px;
+    }
+    .OpenNaw .link2 a { 
+        font-family: var(--Rubik);
+        font-style: italic;
+        font-size: 24px;
+        margin: 0 30px;
+        padding: 0 6px;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        text-decoration: none;
+        font-weight: 500;
+        margin: 28px 0;
+        text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.601);
+    }
+}
