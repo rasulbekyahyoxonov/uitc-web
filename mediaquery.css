@@ -175,3 +175,40 @@
         text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.601);
     }
 }
+@media only screen and (max-width: 660px) {
+    .sideBar {
+        width: 65px;
+    }
+    .Gboxs, .Btnbox {
+        margin-left: 26%;
+    }
+    .topname-h1 {
+        font-size: 40px;
+    }
+    .topname-h1::before {
+        width: 70px;
+    }
+    .Gboxs p {
+        font-size: 12px;
+    }
+    
+}
+@media only screen and (max-width: 550px) {
+    .Btnbox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 130px;
+    }
+    .Btnbox .btn {
+        margin-bottom: 35px;
+    }
+    .Btnbox .btn2 {
+        margin-left: 70px;
+    }
+    .BtnBox-div
+    {
+        background: red;
+
+    }
+}

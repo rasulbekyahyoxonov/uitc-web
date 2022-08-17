@@ -28,5 +28,3 @@ document.querySelector('.check-img').addEventListener('click', function() {
 document.querySelector('.close-icon').addEventListener('click', ()=> {
     document.querySelector('.OpenNaw').style.display = 'none';
 })
-
-new WOW().init();
