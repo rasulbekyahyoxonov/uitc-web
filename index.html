@@ -4,60 +4,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="webfonts/">
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <title>Document</title>
 </head>
-<body>
+<body id="my-scrollbar">
+    <!-- header -->
     <header class="head">
-            <ul class="head-ul">
-                <li><a href="#">Bosh sahifa</a></li>        
-                <li><a href="#">Kurslar</a></li>
-                <li><a href="#"><img src="Group 2.png" alt="none"></a></li>
-                <li><a href="#">Biz haqimizda</a></li>
-                <li><a href="#">Loyihalar</a></li>
-            </ul>
-    </header>
-    <section>
-        <div class="leftSec">
-            <div class="leftSec-top">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        <div class="container">
+            <div class="link">
+                <a href="#">Bosh sahifa</a>
+                <a href="#">Kurslarmiz</a>
             </div>
-            <div class="leftSec-bottom">
-                <p>Kelajak kasblari shu yerdan boshlanadi</p>
+            <div class="brand">
+                <a href="#"><img src="pictures/Group 2.png" alt=""></a>
+            </div>
+            <div class="link">
+                <a href="#">Biz haqimizda</a>
+                <a href="#">Loyihalar</a>
             </div>
         </div>
-        <div class="rightSec">
-            <div class="topname">
-                <h1 class="topname-h1">Grafik dizayn</h1>
-                <div class="crc"></div>
-                <h3 class="topname-h3">Grafikaning eng noyob <br> sirlarini biz bilan kashf etasiz!</h3>
+        <div class="brand2">
+            <a href="#"><img src="pictures/Group 2.png" alt=""></a>
+        </div>
+        <label class="label-one">
+            <img class="check-img" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e" alt="none">
+        </label>
+
+    </header>
+
+    <div class="OpenNaw wow fadeIn">
+        <div class="brand3">
+            <a href="#"><img src="pictures/Group 2.png" alt=""></a>
+            <i class="fa-regular close-icon fa-xmark"></i>
+        </div>
+        <div class="link2">
+            <a href="#" class="wow fadeInLeft">Bosh sahifa</a>
+            <a href="#" class="wow fadeInRight">Kurslarmiz</a>
+            <a href="#" class="wow fadeInLeft">Biz haqimizda</a>
+            <a href="#" class="wow fadeInRight">Loyihalar</a>
+        </div>
+    </div>
+
+    <!-- SideBar -->
+    <section class="sideBar">
+        <div class="icon">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <div class="text">
+            <p>Kelajak kasblari shu yerdan boshlanadi</p>
+        </div>
+    </section>
+
+    <!-- Main section -->
+    <div class="scroll-Div" id="scroll-div" data-0="transform: translateX(-0%);" data-1000="transform: translateX(-200%);">
+        <section class="GrafikBox GrafikBox1">
+            <div class="Gboxs">
+                <h1 class="topname-h1 wow fadeInLeft">Grafik <span class="mini">dizayn</span></h1>
+                <p class="wow fadeInLeft">GRAFIKANING ENG NOYOB <br> SIRLARINI BIZ BILAN KASHF ETASIZ!</p>
             </div>
-            <div class="bottomBtn">
-                <button class="btn btn1">Kursga yozilish</button>
-                <button class="btn btn2">Batafsil</button>
+        </section>
+
+
+        <section class="GrafikBox GrafikBox2">
+            <div class="Gboxs">
+                <h1 class="topname-h1 wow fadeInLeft">Frontend & Backend</h1>
+                <p class="wow fadeInLeft">Web dasturlashda kod yozish <br> san`atni mukammal egallang!</p>
             </div>
+        </section> 
+
+
+        <section class="GrafikBox GrafikBox3">
+            <div class="Gboxs">
+                <h1 class="topname-h1 wow fadeInLeft">3d modeling</h1>
+                <p class="wow fadeInLeft">3 o`lchamli fazoni bizning <br> kurslarimizda zapt etasiz!</p>
+            </div>
+        </section> 
+    </div>
+    
+    <!-- Absolute sections -->
+    <div class="BtnBox-div">
+        <div class="Btnbox">
+            <button class="btn btn1">Kursga yozilish</button>
+            <button class="btn btn2 clr3">Batafsil</button>
             <div class="lineDiv">
-                <div class="oval"></div>
+                <div class="oval" id="oval1"></div>
                 <div class="line"></div>
-                <div class="oval oval2"></div>
+                <div class="oval oval2" id="oval2"></div>
                 <div class="line"></div>
-                <div class="oval oval2"></div>
+                <div class="oval oval2" id="oval3"></div>
                 <div class="line line2"></div>
             </div>
         </div>
+    </div>
+
+    <div class="circleDiv">
+        <div class="main-circle wow fadeIn"></div>
+        <div class="circle2 wow fadeIn" data-0="top:17%; right: 52%;" data-500="top:57%; right: 62%;"  data-1000="top:61%; right: 42%;"></div>
+        <div class="circle3 wow fadeIn" data-0="top:21%; right: 5%;" data-500="top:62%; right: 3%;"  data-1000="top:25%; right: 31%;"></div>
+        <div class="circle4 wow fadeIn" data-0="bottom: 30%; right: 45%;" data-500="bottom: 65%; right: 40%;" data-1000="bottom: 70%; right: 73%;"></div>
+        <div class="circle5 wow fadeIn" data-0="bottom: 26%; right: 10%;" data-500="bottom: 63%; right: 9%;" data-1000="bottom: 50%; right: 0;"></div>
+    </div>
+
+    <section class="fonText" data-0="transform: translateX(-0%);" data-1000="transform: translateX(-200%);">
+        <h1 class="txt1 wow slideInLeft">United it clubs &nbsp; United it clubs &nbsp;  United it clubs United it clubs &nbsp; United it clubs &nbsp; United it clubs &nbsp; United it clubs </h1>
+        <h1 class="txt2 wow slideInRight">United it clubs &nbsp; &nbsp; United it clubs United it clubs United it clubs &nbsp; &nbsp; United it clubs &nbsp; &nbsp; United it clubs &nbsp; &nbsp; United it clubs &nbsp; &nbsp; United it clubs </h1>
     </section>
-    <!-- <section class="section2">
-        <div class="textDiv">
-            <p>United it clubs</p>
-            <p class="uitc2">United it clubs</p>
-        </div>
-
-    </section> -->
-
-
-    <script src="javascript.js"></script>
+   
+    <script src="js/javascript.js"></script>
+    <script src="js/skrollr.js"></script>
+    <script>
+        var s = skrollr.init();
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>

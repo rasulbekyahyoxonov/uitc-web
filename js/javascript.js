@@ -1,3 +1,4 @@
+
 let oneSection = document.getElementById('scroll-div');
 let oval1 = document.getElementById('oval1');
 let oval2 = document.getElementById('oval2');
@@ -22,7 +23,7 @@ oval3.addEventListener('click', function () {
     this.style.background = '#fff'
 })
 
-document.querySelector('.check-img').addEventListener('click', function() {
+document.querySelector('.check-img').addEventListener('click', ()=> {
     document.querySelector('.OpenNaw').style.display = 'flex';
 })
 document.querySelector('.close-icon').addEventListener('click', ()=> {
